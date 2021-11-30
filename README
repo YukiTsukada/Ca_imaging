@@ -1,0 +1,27 @@
+
+analyze_some.m
+% analyze FRET images and draw graphs
+
+analyze_some_TC.m
+% analyze FRET images and draw graphs with precise time information
+
+P_p = backgroundplot_meeting(FILE,bn,n)
+% make P_p valule for analyze_some.m
+
+RATIO = im_split(IM) 
+% splitting input image and registrate
+
+  RATIO = imsplit_ontime(IM)
+  % correct time version of im_split.m
+
+plot_im_split(RATIO,FILENAME,N)
+% plot ratio vs time
+% according to calculated ratio and timestamp in (N) images
+%
+
+plot_each_data
+% plot each data set with printing a graph
+
+
+[gapY gapX] = calib_position(IM_FILE);
+% calculate positional calibration between YFP and CFP
